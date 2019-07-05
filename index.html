@@ -6,13 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <meta name="x-apple-disable-message-reformatting">  
     
-
-
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cabin|DM+Serif+Display&display=swap" rel="stylesheet">
+     <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
     <!-- CSS Reset : BEGIN -->
-<style>
 
+<style>
 html,
 body {
     margin: 0 auto !important;
@@ -91,6 +90,7 @@ img.g-img + div {
     u ~ div .email-container {
         min-width: 320px !important;
     }
+
 }
 /* iPhone 6, 6S, 7, 8, and X */
 @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
@@ -353,13 +353,13 @@ a{
         <tr>
           <td class="bg_white">
             <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-              <tr>
+              <tr id="about_mec">
                 <td class="bg_dark email-section" style="text-align:center;">
                   
                   <div class="heading-section heading-section-white">
                     
                     <h2 class="subheading">Welcome To Mec.Dev</h2>
-                    <p>Innovation doesn't come just from giving people incentives, it comes from creating environments where their ideas can connect.
+                    <p >Innovation doesn't come just from giving people incentives, it comes from creating environments where their ideas can connect.
 
                     MEC.conf, the developer conference of Model Engineering College brought to you by IEEE MEC SB in association with IETE SF and FOSSMEC gives you exactly that!
                     By combining software and hardware in two parallel tracks with devsprints, workshops and much more!</p>
@@ -371,7 +371,7 @@ a{
               <tr>
                 <td class="bg_white email-section">
                   <div class="heading-section" style="text-align: center; padding: 0 30px;">
-                    <span class="subheading"><h2>Workshops</h2></span>
+                    <span class="subheading"><h2 id="Workshops">Workshops</h2></span>
                     
                     <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
                   </div>
@@ -420,7 +420,60 @@ a{
                 
               </tr><!-- end: tr -->
              
-              <tr>
+             <!---new heading-->
+             <tr>
+              <td class="bg_white email-section">
+                <div class="heading-section" style="text-align: center; padding: 0 30px;">
+                  <span class="subheading"><h2>New!!</h2></span>
+                  
+                  <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                </div>
+                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr>
+                    <td valign="top" width="50%" style="padding-top: 20px;">
+                      <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tr>
+                          <td class="icon">
+                            <img src="images/001-diet.png" alt="" style="width: 60px; max-width: 600px; height: auto; margin: auto; display: block;">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-services">
+                            <h3>abc</h3>
+                            <p>Far far away, behind the word mountains, far from the countries</p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td valign="top" width="50%" style="padding-top: 20px;">
+                      <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tr>
+                          <td class="icon">
+                            <img src="images/003-recipe-book.png" alt="" style="width: 60px; max-width: 600px; height: auto; margin: auto; display: block;">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="text-services">
+                            <h3>def</h3>
+                            <p>Far far away, behind the word mountains, far from the countries</p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              
+            </tr>
+           
+          
+            <tr>
+              
+            </tr><!-- end: tr -->
+           <!-- end: pf ne heading -->
+             <tr>
                 <td class="bg_light email-section" style="padding: 0; width: 100%;">
                   <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
                     <tr>
@@ -430,10 +483,14 @@ a{
                              
                             <td class="text-services" style="text-align: center; padding: 20px 30px;">
                             <div class="heading-section">
-                                 <span class="subheading" style="text-align: center"><h2>Our speakers</h2></span><br>
+                                 <span class="subheading" style="text-align: center"><h2 id="speakers">Our speakers</h2></span><br>
                                 <h2 style="font-size: 25px;">Satish Babu</h2>
                                 <p>Satish Babu is a Free Software activist, early Internet advocate, and development professional based out of Kerala, India.He   has several achievements to his credit such as being the Founding Director of ICFOSS, the Chair of IEEE Kerala Section, the Chairman of Internet Society, Trivandrum Chapter.He was earlier the CEO of SIFFS, an NGO of small-scale artisanal fishers of south India. He is also the Founder and President of InApp.Hear him speak about the Internet, it's democracy and the role engineers can play</p>
                                 <p><a href="#" class="btn btn-primary">Read more</a></p>
+                                
+                              
+
+                              </div>
                               </div>
                             </td>
                           </tr>
@@ -443,7 +500,7 @@ a{
                         <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                           <tr>
                             <td>
-                              <img src="images/Satishbabu.png" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;">
+                              <img src="images/Satishbabu.png" class="speakers" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;">
                             </td>
                           </tr>
                         </table>
@@ -460,7 +517,7 @@ a{
                         <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                           <tr>
                             <td>
-                              <img src="images/sp2.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;">
+                              <img src="images/sp2.jpg" alt="" style="width: 100%; width: auto; height: auto; margin: auto; display: block;">
                             </td>
                           </tr>
                         </table>
@@ -505,7 +562,7 @@ a{
                         <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                           <tr>
                             <td>
-                              <img src="images/bg_6.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;">
+                              <img src="images/bg_6.jpg" class="speakers"  style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;">
                             </td>
                           </tr>
                         </table>
@@ -645,7 +702,7 @@ a{
                 <td class="bg_white email-section">
                   <div class="heading-section" style="text-align: center; padding: 0 30px;">
                   
-                    <h2><div style="color: #ff3c00"> VENUE</div></h2>
+                    <h2 id="Venue"><div style="color: #ff3c00"> VENUE</div></h2>
                      <p class="lead">The Conference is planned to be hosted at the<a href="https://www.facebook.com/keralatiz/">
                     Kerala Technology Innovation Zone</a>, Kochi</
                   </div>
@@ -684,6 +741,7 @@ a{
                     <tr>
                       <td style="text-align: left; padding-right: 10px;">
                         <h3 class="heading">Mec. Dev</h3>
+                        <img src="images/favicon.png" style="height: auto ; width : 85% ; max-width : 400px ;padding: 0vw;padding-right: 5vw ">
                         <p>**some tagline**</p>
                       </td>
                     </tr>
@@ -711,10 +769,10 @@ a{
                       <td style="text-align: left; padding-left: 10px;">
                         <br> <br>    
                         <ul>
-                          <li><a href="#">About Mec.Dev</a></li>
-                          <li><a href="#">Workshops</a></li>
-                          <li><a href="#">Our speakers</a></li>
-                          <li><a href="#">Venue</a></li>
+                          <li><a href="#about_mec">About Mec.Dev</a></li>
+                          <li><a href="#Workshops">Workshops</a></li>
+                          <li><a href="#speakers">Our speakers</a></li>
+                          <li><a href="#Venue">Venue</a></li>
                         </ul>
                       </td>
                     </tr>
@@ -728,5 +786,7 @@ a{
 
     </div>
   </center>
+ 
 </body>
+
 </html>
