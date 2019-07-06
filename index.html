@@ -1,792 +1,844 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
 <head>
-    <meta charset="utf-8"> 
-    <meta name="viewport" content="width=device-width"> 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-    <meta name="x-apple-disable-message-reformatting">  
-    
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Cabin|DM+Serif+Display&display=swap" rel="stylesheet">
-     <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <!-- CSS Reset : BEGIN -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="x-apple-disable-message-reformatting">
 
-<style>
-html,
-body {
-    margin: 0 auto !important;
-    padding: 0 !important;
-    height: 100% !important;
-    width: 100% !important;
-    background: #f1f1f1;
-}
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cabin|DM+Serif+Display&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <!-- CSS Reset : BEGIN -->
 
-
-* {
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-}
+  <style>
+    html,
+    body {
+      margin: 0 auto !important;
+      padding: 0 !important;
+      height: 100% !important;
+      width: 100% !important;
+      background: #f1f1f1;
+    }
 
 
-div[style*="margin: 16px 0"] {
-    margin: 0 !important;
-}
+    * {
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+    }
 
 
-table,
-td {
-    mso-table-lspace: 0pt !important;
-    mso-table-rspace: 0pt !important;
-}
+    div[style*="margin: 16px 0"] {
+      margin: 0 !important;
+    }
 
 
-table {
-    border-spacing: 0 !important;
-    border-collapse: collapse !important;
-    table-layout: fixed !important;
-    margin: 0 auto !important;
-}
+    table,
+    td {
+      mso-table-lspace: 0pt !important;
+      mso-table-rspace: 0pt !important;
+    }
 
 
-img {
-    -ms-interpolation-mode:bicubic;
-}
+    table {
+      border-spacing: 0 !important;
+      border-collapse: collapse !important;
+      table-layout: fixed !important;
+      margin: 0 auto !important;
+    }
 
 
-a {
-    text-decoration: none;
-}
+    img {
+      -ms-interpolation-mode: bicubic;
+    }
 
 
-*[x-apple-data-detectors],  /* iOS */
-.unstyle-auto-detected-links *,
-.aBn {
-    border-bottom: 0 !important;
-    cursor: default !important;
-    color: inherit !important;
-    text-decoration: none !important;
-    font-size: inherit !important;
-    font-family: inherit !important;
-    font-weight: inherit !important;
-    line-height: inherit !important;
-}
+    a {
+      text-decoration: none;
+    }
 
 
-.a6S {
-    display: none !important;
-    opacity: 0.01 !important;
-}
+    *[x-apple-data-detectors],
+    /* iOS */
 
-.im {
-    color: inherit !important;
-}
+    .unstyle-auto-detected-links *,
+    .aBn {
+      border-bottom: 0 !important;
+      cursor: default !important;
+      color: inherit !important;
+      text-decoration: none !important;
+      font-size: inherit !important;
+      font-family: inherit !important;
+      font-weight: inherit !important;
+      line-height: inherit !important;
+    }
 
-img.g-img + div {
-    display: none !important;
-}
 
-/* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
-@media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
-    u ~ div .email-container {
+    .a6S {
+      display: none !important;
+      opacity: 0.01 !important;
+    }
+
+    .im {
+      color: inherit !important;
+    }
+
+    img.g-img+div {
+      display: none !important;
+    }
+
+    /* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+
+    @media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+      u~div .email-container {
         min-width: 320px !important;
+      }
+
     }
 
-}
-/* iPhone 6, 6S, 7, 8, and X */
-@media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
-    u ~ div .email-container {
+    /* iPhone 6, 6S, 7, 8, and X */
+
+    @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+      u~div .email-container {
         min-width: 375px !important;
+      }
     }
-}
-/* iPhone 6+, 7+, and 8+ */
-@media only screen and (min-device-width: 414px) {
-    u ~ div .email-container {
+
+    /* iPhone 6+, 7+, and 8+ */
+
+    @media only screen and (min-device-width: 414px) {
+      u~div .email-container {
         min-width: 414px !important;
+      }
     }
-}
+  </style>
 
-</style>
+  <!-- CSS Reset : END -->
 
-    <!-- CSS Reset : END -->
+  <!-- Progressive Enhancements : BEGIN -->
+  <style>
+    .primary {
+      background: #f3a333;
+    }
 
-    <!-- Progressive Enhancements : BEGIN -->
-<style>
+    .bg_white {
+      background: #ffffff;
+    }
 
-.primary{
-  background: #f3a333;
-}
+    .bg_light {
+      background: #fafafa;
+    }
 
-.bg_white{
-  background: #ffffff;
-}
-.bg_light{
-  background: #fafafa;
-}
-.bg_black{
-  background: #000000;
-}
-.bg_dark{
-  background: rgba(0,0,0,.8);
-}
-.email-section{
-  padding:2.5em;
-}
+    .bg_black {
+      background: #000000;
+    }
 
-/*BUTTON*/
-.btn{
-  padding: 10px 15px;
-}
-.btn.btn-primary{
-  border-radius: 30px;
-  background: #ff3c00;
-  color: #ffffff;
-}
+    .bg_dark {
+      background: rgba(0, 0, 0, .8);
+    }
 
+    .email-section {
+      padding: 2.5em;
+    }
 
+    /*BUTTON*/
 
-h1,h2,h3,h4,h5,h6{
-  font-family: 'Playfair Display', serif;
-  color: #000000;
-  margin-top: 0;
-}
+    .btn {
+      padding: 10px 15px;
+    }
 
-body{
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 1.8;
-  color: rgba(0,0,0,.4);
-  
-}
-
-a{
-  color: #f3a333;
-}
+    .btn.btn-primary {
+      border-radius: 30px;
+      background: #ff3c00;
+      color: #ffffff;
+    }
 
 
-.logo h1{
-  margin: 0;
-}
-.logo h1 a{
-  color: #000;
-  font-size: 20px;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
-}
 
-/*HERO*/
-.hero{
-  position: relative;
-  background-color:#f1f1f1;
-  height:500px;
-}
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: 'Playfair Display', serif;
+      color: #000000;
+      margin-top: 0;
+    }
 
-.hero .text{
-  color: rgba(255,255,255,.8);
-}
-.hero .text h2{
-  color: #ffffff;
-  font-size: 30px;
-  margin-bottom: 0;
-}
+    body {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 1.8;
+      color: rgba(0, 0, 0, .4);
+
+    }
+
+    a {
+      color: #f3a333;
+    }
 
 
-/*HEADING SECTION*/
+    .logo h1 {
+      margin: 0;
+    }
 
-.heading-section h2{
-  color: #000000; 
-  font-size: 34px;
-  margin-top: 0;
-  line-height: 1.4;
+    .logo h1 a {
+      color: #000;
+      font-size: 20px;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-family: 'Montserrat', sans-serif;
+    }
 
-  }
-  
-  .mec_dev
-  {
-    font-size:63px;
-    color:white;
-    
-    text-shadow: 2px 2px 4px #000000;
-    font-family: 'DM Serif Display', serif;
-    
-  }
-.heading-section .subheading{
-  margin-bottom: 20px !important;
-  display: inline-block;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  position: relative;
-  font-family: 'Cabin', sans-serif;
-  text-shadow: 2px 2px 4px #998d8d;
-  
-  
-  
-  }
-.heading-section .subheading::after{
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0.3px;
-  content: '';
-  width: 100%;
-  height: 2px;
-  background:#ff3c00;
-  margin: 0 auto;
-  
-}
+    /*HERO*/
 
-.heading-section-white{
-  color:#ced4da;
-  
-  
-}
-.heading-section-white h2{
-  font-size: 28px;
-  font-family: 
-  line-height: 1;
-  padding-bottom: 0;
-  
-  
-}
-.heading-section-white h2{
-  color:white;
-  font-size: 27px !important;
-  text-shadow: 2px 2px 4px #000000 !important;
-}
+    .hero {
+      position: relative;
+      background-color: #f1f1f1;
+      height: 500px;
+    }
 
-.icon{
-  text-align: center;
-}
+    .hero .text {
+      color: rgba(255, 255, 255, .8);
+    }
+
+    .hero .text h2 {
+      color: #ffffff;
+      font-size: 30px;
+      margin-bottom: 0;
+    }
 
 
-.text-services{
-  padding: 10px 10px 0; 
-  text-align: center;
-  color:#495057;
-}
-.text-services h3{
-  font-size: 20px;
-  
-}
+    /*HEADING SECTION*/
+
+    .heading-section h2 {
+      color: #000000;
+      font-size: 34px;
+      margin-top: 0;
+      line-height: 1.4;
+
+    }
+
+    .mec_dev {
+      font-size: 63px;
+      color: white;
+
+      text-shadow: 2px 2px 4px #000000;
+      font-family: 'DM Serif Display', serif;
+
+    }
+
+    .heading-section .subheading {
+      margin-bottom: 20px !important;
+      display: inline-block;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      position: relative;
+      font-family: 'Cabin', sans-serif;
+      text-shadow: 2px 2px 4px #998d8d;
 
 
-/*COUNTER*/
-.counter-text{
-  text-align: center;
-}
-.counter-text .num{
-  display: block;
-  color: white;
-  text-shadow: 2px 2px 4px #000000;
-  font-size: 34px;
-  font-weight: 700;
-  
-}
-.counter-text .name{
-  display: block;
-  color: rgba(255,255,255,.9); 
-  font-size: 17px;
-}
+
+    }
+
+    .heading-section .subheading::after {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0.3px;
+      content: '';
+      width: 100%;
+      height: 2px;
+      background: #ff3c00;
+      margin: 0 auto;
+
+    }
+
+    .heading-section-white {
+      color: #ced4da;
 
 
-/*FOOTER*/
+    }
 
-.footer{
-  color: rgba(255,255,255,.5);
-
-}
-.footer .heading{
-  color: #ffffff;
-  font-size: 20px;
-}
-.footer ul{
-  margin: 0;
-  padding: 0;
-}
-.footer ul li{
-  list-style: none;
-  margin-bottom: 10px;
-}
-.footer ul li a{
-  color: rgba(255,255,255,1);
-}
+    .heading-section-white h2 {
+      font-size: 28px;
+      font-family: line-height: 1;
+      padding-bottom: 0;
 
 
-@media screen and (max-width: 500px) {
+    }
 
-  .icon{
-    text-align: left;
-  }
+    .heading-section-white h2 {
+      color: white;
+      font-size: 27px !important;
+      text-shadow: 2px 2px 4px #000000 !important;
+    }
 
-  .text-services{
-    padding-left: 0;
-    padding-right: 20px;
-    text-align: left; }
+    .icon {
+      text-align: center;
+    }
 
-}
 
-</style>
+    .text-services {
+      padding: 10px 10px 0;
+      text-align: center;
+      color: #495057;
+    }
+
+    .text-services h3 {
+      font-size: 20px;
+
+    }
+
+
+    /*COUNTER*/
+
+    .counter-text {
+      text-align: center;
+    }
+
+    .counter-text .num {
+      display: block;
+      color: white;
+      text-shadow: 2px 2px 4px #000000;
+      font-size: 34px;
+      font-weight: 700;
+
+    }
+
+    .counter-text .name {
+      display: block;
+      color: rgba(255, 255, 255, .9);
+      font-size: 17px;
+    }
+
+
+    /*FOOTER*/
+
+    .footer {
+      color: rgba(255, 255, 255, .5);
+
+    }
+
+    .footer .heading {
+      color: #ffffff;
+      font-size: 20px;
+    }
+
+    .footer ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    .footer ul li {
+      list-style: none;
+      margin-bottom: 10px;
+    }
+
+    .footer ul li a {
+      color: rgba(255, 255, 255, 1);
+    }
+
+
+    @media screen and (max-width: 500px) {
+
+      .icon {
+        text-align: left;
+      }
+
+      .text-services {
+        padding-left: 0;
+        padding-right: 20px;
+        text-align: left;
+      }
+
+
+      .extra {
+        color: red;
+        display: none;
+        visibility: hidden;
+      }
+
+    }
+  </style>
 </head>
 
-
-
 <body width="100%" style="margin: 0; padding: 0 !important; ">
-    <div style="max-width: 600px; margin: 0 auto;" class="email-container">
-      <!-- BEGIN BODY -->
-      <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;"> 
+  <div style="max-width: 600px; margin: 0 auto;" class="email-container">
+    <!-- BEGIN BODY -->
+    <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
+      <tr>
+        <td valign="middle" class="hero" style="background-image: url(images/gif.gif); background-size: cover; height: 500px;">
+          <table>
+            <tr>
+              <td>
+                <div class="text" style="padding: 0 3em; text-align: center;">
+                  <h1 class="mec_dev">Mec.Dev Conf </h1>
+                  <h2 style="color:black;font-size:34px">July 26, 27, 28</h2>
+                  <p><a href="#" class="btn btn-primary" style="background-color: #fd7e14;font-size:18px">Buy tickets</a></p>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <!-- end tr -->
+      <tr>
+        <td class="bg_white">
+          <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+            <tr id="about_mec">
+              <td class="bg_dark email-section" style="text-align:center;">
+
+                <div class="heading-section heading-section-white">
+
+                  <h2 class="subheading">Welcome To Mec.Dev</h2>
+                  <p>Innovation doesn't come just from giving people incentives, it comes from creating environments where their ideas can connect. MEC.conf, the developer conference of Model Engineering College brought to you by IEEE MEC SB in association
+                    with IETE SF and FOSSMEC gives you exactly that! By combining software and hardware in two parallel tracks with devsprints, workshops and much more!</p>
+                </div>
+  </div>
+  </td>
+  </tr>
+  <!-- end: tr -->
+
+  <tr>
+    <td class="bg_white email-section">
+      <div class="heading-section" style="text-align: center; padding: 0 30px;">
+        <span class="subheading"><h2 id="Workshops">Workshops</h2></span>
+
+        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+      </div>
+      <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
         <tr>
-          <td valign="middle" class="hero" style="background-image: url(images/gif.gif); background-size: cover; height: 500px;">
-            <table>
+          <td valign="top" width="50%" style="padding-top: 20px;">
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
               <tr>
-                <td>
-                  <div class="text" style="padding: 0 3em; text-align: center;">
-                    <h1 class="mec_dev">Mec.Dev Conf    </h1>
-                    <h2 style="color:black;font-size:34px">July 26, 27, 28</h2 >
-                    <p><a href="#" class="btn btn-primary" style="background-color: #fd7e14;font-size:18px">Buy tickets</a></p>
+                <td class="icon">
+                  <img src="images/001-diet.png" alt="" style="width: 60px; max-width: 600px; height: auto; margin: auto; display: block;">
+                </td>
+              </tr>
+              <tr>
+                <td class="text-services">
+                  <h3>abc</h3>
+                  <p>Far far away, behind the word mountains, far from the countries</p>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td valign="top" width="50%" style="padding-top: 20px;">
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+              <tr>
+                <td class="icon">
+                  <img src="images/003-recipe-book.png" alt="" style="width: 60px; max-width: 600px; height: auto; margin: auto; display: block;">
+                </td>
+              </tr>
+              <tr>
+                <td class="text-services">
+                  <h3>def</h3>
+                  <p>Far far away, behind the word mountains, far from the countries</p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <!-- end: tr -->
+  <tr>
+
+  </tr>
+  <!-- end: tr -->
+
+  <tr>
+
+  </tr>
+  <!-- end: tr -->
+
+  <!---new heading-->
+  <tr>
+    <td class="bg_white email-section">
+      <div class="heading-section" style="text-align: center; padding: 0 30px;">
+        <span class="subheading"><h2>New!!</h2></span>
+
+        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+      </div>
+      <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+          <td valign="top" width="50%" style="padding-top: 20px;">
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+              <tr>
+                <td class="icon">
+                  <img src="images/001-diet.png" alt="" style="width: 60px; max-width: 600px; height: auto; margin: auto; display: block;">
+                </td>
+              </tr>
+              <tr>
+                <td class="text-services">
+                  <h3>abc</h3>
+                  <p>Far far away, behind the word mountains, far from the countries</p>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td valign="top" width="50%" style="padding-top: 20px;">
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+              <tr>
+                <td class="icon">
+                  <img src="images/003-recipe-book.png" alt="" style="width: 60px; max-width: 600px; height: auto; margin: auto; display: block;">
+                </td>
+              </tr>
+              <tr>
+                <td class="text-services">
+                  <h3>def</h3>
+                  <p>Far far away, behind the word mountains, far from the countries</p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+
+  </tr>
+
+  <tr>
+
+  </tr>
+  <!-- end: tr -->
+  <!-- end: pf ne heading -->
+  <tr>
+    <td class="bg_light email-section" style="padding: 0; width: 100%;">
+      <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+          <td valign="middle" width="50%">
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+              <tr>
+
+                <td class="text-services" style="text-align: center; padding: 20px 30px;">
+                  <div class="heading-section">
+                    <span class="subheading" style="text-align: center"><h2 id="speakers">Our speakers</h2></span><br>
+                    <h2 style="font-size: 25px;">Satish Babu</h2>
+                    <p>Satish Babu is a Free Software activist, early Internet advocate, and development professional based out of Kerala, India.He has several achievements to his credit such as being the Founding Director of ICFOSS, the Chair of IEEE Kerala
+                      Section, the Chairman of Internet Society, Trivandrum Chapter.</p>
+                    <p class="extra">He was earlier the CEO of SIFFS, an NGO of small-scale artisanal fishers of south India. He is also the Founder and President of InApp.Hear him speak about the Internet, it's democracy and the role engineers can play</p>
+
+                  </div>
                   </div>
                 </td>
               </tr>
             </table>
           </td>
-        </tr><!-- end tr -->
-        <tr>
-          <td class="bg_white">
+          <td valign="middle" width="50%">
             <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-              <tr id="about_mec">
-                <td class="bg_dark email-section" style="text-align:center;">
-                  
-                  <div class="heading-section heading-section-white">
-                    
-                    <h2 class="subheading">Welcome To Mec.Dev</h2>
-                    <p >Innovation doesn't come just from giving people incentives, it comes from creating environments where their ideas can connect.
-
-                    MEC.conf, the developer conference of Model Engineering College brought to you by IEEE MEC SB in association with IETE SF and FOSSMEC gives you exactly that!
-                    By combining software and hardware in two parallel tracks with devsprints, workshops and much more!</p>
-            </div></div>
-                </td>
-              </tr><!-- end: tr -->
-
-              
               <tr>
-                <td class="bg_white email-section">
-                  <div class="heading-section" style="text-align: center; padding: 0 30px;">
-                    <span class="subheading"><h2 id="Workshops">Workshops</h2></span>
-                    
-                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                <td>
+                  <img src="images/Satishbabu.png" class="speakers" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;">
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <!-- end: tr -->
+  <tr>
+    <td class="bg_light email-section" style="padding: 0; width: 100%;">
+      <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+          <td valign="middle" width="50%">
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+              <tr>
+                <td>
+                  <img src="images/sp2.jpg" alt="" style="width: 100%; width: auto; height: auto; margin: auto; display: block;">
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td valign="middle" width="50%">
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+              <tr>
+                <td class="text-services" style="text-align: left; padding: 20px 30px;">
+                  <div class="heading-section">
+
+                    <h2 style="font-size: 22px;">Balasankar "Balu" C</h2>
+                    <p>Balasankar works remotely as a distribution engineer in Gitlab and is also an active Debian developer.His passion for the free and open source has led to contributions over the last 8 yaers to noteworthy organizations- Mozilla,GNOME
+                      to name a few.
+                      <p class="extra">A man of strong beliefs ,Balu is determined to spread the word of digital freedom and open goodness to nuture contributors of tomorrow</p>
+                    </p>
+
                   </div>
-                  <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-                    <tr>
-                      <td valign="top" width="50%" style="padding-top: 20px;">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                          <tr>
-                            <td class="icon">
-                              <img src="images/001-diet.png" alt="" style="width: 60px; max-width: 600px; height: auto; margin: auto; display: block;">
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="text-services">
-                              <h3>abc</h3>
-                              <p>Far far away, behind the word mountains, far from the countries</p>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                      <td valign="top" width="50%" style="padding-top: 20px;">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                          <tr>
-                            <td class="icon">
-                              <img src="images/003-recipe-book.png" alt="" style="width: 60px; max-width: 600px; height: auto; margin: auto; display: block;">
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="text-services">
-                              <h3>def</h3>
-                              <p>Far far away, behind the word mountains, far from the countries</p>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-                  </table>
                 </td>
-              </tr><!-- end: tr -->
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <!-- end: tr -->
+  <tr>
+    <td class="bg_light email-section" style="padding: 0; width: 100%;">
+      <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+          <td valign="middle" width="50%">
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
               <tr>
-                
-              </tr><!-- end: tr -->
-             
-            
-              <tr>
-                
-              </tr><!-- end: tr -->
-             
-             <!---new heading-->
-             <tr>
-              <td class="bg_white email-section">
-                <div class="heading-section" style="text-align: center; padding: 0 30px;">
-                  <span class="subheading"><h2>New!!</h2></span>
-                  
-                  <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                </div>
-                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-                  <tr>
-                    <td valign="top" width="50%" style="padding-top: 20px;">
-                      <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                        <tr>
-                          <td class="icon">
-                            <img src="images/001-diet.png" alt="" style="width: 60px; max-width: 600px; height: auto; margin: auto; display: block;">
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="text-services">
-                            <h3>abc</h3>
-                            <p>Far far away, behind the word mountains, far from the countries</p>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                    <td valign="top" width="50%" style="padding-top: 20px;">
-                      <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                        <tr>
-                          <td class="icon">
-                            <img src="images/003-recipe-book.png" alt="" style="width: 60px; max-width: 600px; height: auto; margin: auto; display: block;">
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="text-services">
-                            <h3>def</h3>
-                            <p>Far far away, behind the word mountains, far from the countries</p>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-            <tr>
-              
-            </tr>
-           
-          
-            <tr>
-              
-            </tr><!-- end: tr -->
-           <!-- end: pf ne heading -->
-             <tr>
-                <td class="bg_light email-section" style="padding: 0; width: 100%;">
-                  <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-                    <tr>
-                      <td valign="middle" width="50%">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                          <tr>
-                             
-                            <td class="text-services" style="text-align: center; padding: 20px 30px;">
-                            <div class="heading-section">
-                                 <span class="subheading" style="text-align: center"><h2 id="speakers">Our speakers</h2></span><br>
-                                <h2 style="font-size: 25px;">Satish Babu</h2>
-                                <p>Satish Babu is a Free Software activist, early Internet advocate, and development professional based out of Kerala, India.He   has several achievements to his credit such as being the Founding Director of ICFOSS, the Chair of IEEE Kerala Section, the Chairman of Internet Society, Trivandrum Chapter.He was earlier the CEO of SIFFS, an NGO of small-scale artisanal fishers of south India. He is also the Founder and President of InApp.Hear him speak about the Internet, it's democracy and the role engineers can play</p>
-                                <p><a href="#" class="btn btn-primary">Read more</a></p>
-                                
-                              
+                <td class="text-services" style="text-align: left; padding: 20px 30px;">
+                  <div class="heading-section">
 
-                              </div>
-                              </div>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                      <td valign="middle" width="50%">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                          <tr>
-                            <td>
-                              <img src="images/Satishbabu.png" class="speakers" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;">
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr><!-- end: tr -->
-              <tr>
-                <td class="bg_light email-section" style="padding: 0; width: 100%;">
-                  <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-                    <tr>
-                      <td valign="middle" width="50%">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                          <tr>
-                            <td>
-                              <img src="images/sp2.jpg" alt="" style="width: 100%; width: auto; height: auto; margin: auto; display: block;">
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                      <td valign="middle" width="50%">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                          <tr>
-                            <td class="text-services" style="text-align: left; padding: 20px 30px;">
-                              <div class="heading-section">
-                                
-                                <h2 style="font-size: 22px;">Balasankar "Balu" C</h2>
-                                <p>Balasankar works remotely as a distribution engineer in Gitlab and is also an active Debian developer.His passion for the free and open source has led to contributions over the last 8 yaers to noteworthy organizations- Mozilla,GNOME to name a few.A man of strong beliefs  ,Balu is determined to spread the word of digital freedom and  open goodness to nuture contributors of tomorrow</p>
-                                <p><a href="#" class="btn btn-primary">Read more</a></p>
-                              </div>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr><!-- end: tr -->
-              <tr>
-                <td class="bg_light email-section" style="padding: 0; width: 100%;">
-                  <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-                    <tr>
-                      <td valign="middle" width="50%">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                          <tr>
-                            <td class="text-services" style="text-align: left; padding: 20px 30px;">
-                              <div class="heading-section">
-                                
-                                <h2 style="font-size: 25px;">Amarjit Singh</h2>
-                                <p>Amarjit Singh is a freelance consultant and software developer with special interests in community engangement ,training,and mentoring.His passion for promoting FOSS,creating and bonding led him to take the  initiative in expanding the scale of FOSSMEET of NITC to what it is now.An energetic speaker enthusiastic about giving back to the society,his zeal can enliven any audience.</p>
-                                <p><a href="#" class="btn btn-primary">Read more</a></p>
-                              </div>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                      <td valign="middle" width="50%">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                          <tr>
-                            <td>
-                              <img src="images/bg_6.jpg" class="speakers"  style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;">
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr><!-- end: tr -->
-              <tr>
-                <td class="bg_light email-section" style="padding: 0; width: 100%;">
-                  <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-                    <tr>
-                      <td valign="middle" width="50%">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                          <tr>
-                            <td>
-                              <img src="images/sp4.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;">
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                      <td valign="middle" width="50%">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                          <tr>
-                            <td class="text-services" style="text-align: left; padding: 20px 30px;">
-                              <div class="heading-section">
-                                
-                                <h2 style="font-size: 22px;">Ejaz Mirzan</h2>
-                                <p>Ejaz Mirzan currently works as a physical design engineer at intel.He has recieved several awards for his work such as ILP kudos award,a testimony to hispassion and dedication.A passionate speaker ever ready to give back to his alma mater,explore the fields of embedded systems,python development and VLSI with him.</p>
-                                <p><a href="#" class="btn btn-primary">Read more</a></p>
-                              </div>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr><!-- end: tr -->
-              <tr>
-                <td valign="middle" class="counter" style="background-image: url(images/gif3.gif); background-size: cover; padding: 4em 0;">
-                  <table>
-                    <tr>
-                      <td valign="middle" width="25%">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                          <tr>
-                            <td class="counter-text">
-                              <span class="num">200</span>
-                              <span class="name">Participants</span>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                      <td valign="middle" width="25%">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                          <tr>
-                            <td class="counter-text">
-                              <span class="num">2</span>
-                              <span class="name">Tracks</span>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                      <td valign="middle" width="25%">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                          <tr>
-                            <td class="counter-text">
-                              <span class="num">20</span>
-                              <span class="name">Speakers</span>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                      <td valign="middle" width="25%">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                          <tr>
-                            <td class="counter-text">
-                              <span class="num">18</span>
-                              <span class="name">Sessions</span>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr><!-- end tr -->
-            
-                    </tr>
-                  </table>
-                </td>
-              </tr><!-- end: tr -->
-              <tr>
-                <td class="bg_light email-section">
-                  <div class="heading-section" style="text-align: center; padding: 0 30px;">
-                    
-                    <h2><span class="id-color">Devsprint</span> with top communities</h2>
-                     <p class="lead">Get ready to contribute to open source organisations with this 14-hour overnight
-                devsprint!</p>
+                    <h2 style="font-size: 25px;">Amarjit Singh</h2>
+                    <p>Amarjit Singh is a freelance consultant and software developer with special interests in community engangement ,training,and mentoring. His passion for promoting FOSS,creating and bonding led him to take the initiative in expanding
+                      the scale of FOSSMEET of NITC to what it is now.
+
+                      <p class="extra">An energetic speaker enthusiastic about giving back to the society,his zeal can enliven any audience.</p>
+                    </p>
                   </div>
-                  <section id="section-devsprint">
+
+                </td>
+
+              </tr>
+            </table>
+
+          </td>
+
+          <td valign="middle" width="50%">
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+              <tr>
+                <td>
+                  <img src="images/bg_6.jpg" class="speakers" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;">
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <!-- end: tr -->
+  <tr>
+    <td class="bg_light email-section" style="padding: 0; width: 100%;">
+      <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+          <td valign="middle" width="50%">
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+              <tr>
+                <td>
+                  <img src="images/sp4.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;">
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td valign="middle" width="50%">
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+              <tr>
+                <td class="text-services" style="text-align: left; padding: 20px 30px;">
+                  <div class="heading-section">
+
+                    <h2 style="font-size: 22px;">Ejaz Mirzan</h2>
+                    <p>Ejaz Mirzan currently works as a physical design engineer at intel.He has recieved several awards for his work such as ILP kudos award,a testimony to hispassion and dedication.</p>
+                    <p class="extra">A passionate speaker ever ready to give back to his alma mater,explore the fields of embedded systems,python development and VLSI with him.</p>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <!-- end: tr -->
+  <tr>
+    <td valign="middle" class="counter" style="background-image: url(images/gif3.gif); background-size: cover; padding: 4em 0;">
+      <table>
+        <tr>
+          <td valign="middle" width="25%">
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+              <tr>
+                <td class="counter-text">
+                  <span class="num">200</span>
+                  <span class="name">Participants</span>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td valign="middle" width="25%">
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+              <tr>
+                <td class="counter-text">
+                  <span class="num">2</span>
+                  <span class="name">Tracks</span>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td valign="middle" width="25%">
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+              <tr>
+                <td class="counter-text">
+                  <span class="num">20</span>
+                  <span class="name">Speakers</span>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td valign="middle" width="25%">
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+              <tr>
+                <td class="counter-text">
+                  <span class="num">18</span>
+                  <span class="name">Sessions</span>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <!-- end tr -->
+
+  </tr>
+  </table>
+  </td>
+  </tr>
+  <!-- end: tr -->
+  <tr>
+    <td class="bg_light email-section">
+      <div class="heading-section" style="text-align: center; padding: 0 30px;">
+
+        <h2><span class="id-color">Devsprint</span> with top communities</h2>
+        <p class="lead">Get ready to contribute to open source organisations with this 14-hour overnight devsprint!
+        </p>
+      </div>
+      <section id="section-devsprint">
         <div class="container relative" id="devsprint">
           <div class="row">
             <div class="col-md-12 text-center">
-              
-             
+
               <div class="spacer-single"></div>
               <div class="row" style="display: flex; align-items: center">
                 <div class="col-md-4 mb30">
-                  <img src="images/fossasia.jpeg" alt="FOSSASIA" class="img-fluid"
-                    style="height: auto ; width : 85% ; max-width : 400px ;padding: 1vw;padding-right: 5vw ">
+                  <img src="images/fossasia.jpeg" alt="FOSSASIA" class="img-fluid" style="height: auto ; width : 85% ; max-width : 400px ;padding: 1vw;padding-right: 5vw ">
                 </div>
                 <div class="col-md-4 mb30">
-                  <img src="images/mozilla.png" alt="Mozilla" class="img-fluid"
-                    style="height: auto ; width : 85% ; max-width : 400px ;padding: 1vw">
+                  <img src="images/mozilla.png" alt="Mozilla" class="img-fluid" style="height: auto ; width : 85% ; max-width : 400px ;padding: 1vw">
                 </div>
                 <div class="col-md-4 mb30">
-                  <img src="images/zulip.png" alt="Zulip" class="img-fluid"
-                    style="height: auto ; width : 85% ; max-width : 400px;padding: 1vw ">
+                  <img src="images/zulip.png" alt="Zulip" class="img-fluid" style="height: auto ; width : 85% ; max-width : 400px;padding: 1vw ">
                 </div>
               </div>
-              
+
             </div>
           </div>
         </div>
-</section>
-                </td>
-              </tr><!-- end: tr -->
-              
-            </table>
+      </section>
+    </td>
+  </tr>
+  <!-- end: tr -->
 
-          </td>
-  </tr>  <!-- end:tr -->
+  </table>
 
+  </td>
+  </tr>
+  <!-- end:tr -->
 
-         <tr>
-                <td class="bg_white email-section">
-                  <div class="heading-section" style="text-align: center; padding: 0 30px;">
-                  
-                    <h2 id="Venue"><div style="color: #ff3c00"> VENUE</div></h2>
-                     <p class="lead">The Conference is planned to be hosted at the<a href="https://www.facebook.com/keralatiz/">
-                    Kerala Technology Innovation Zone</a>, Kochi</
-                  </div>
-                  <section id="section-map" class="no-top no-bottom" aria-label="map-container">
-    <div class="row">
-      <div class="col-md-12 text-center">
-        
-        <div class="spacer-single"></div>
-      </div>
-    </div>
-    <div id="map">
-      <iframe width="100%" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-        src="https://www.openstreetmap.org/export/embed.html?bbox=76.3482964038849%2C10.052339152035792%2C76.35957241058351%2C10.05884659345764&amp;layer=mapnik&amp;marker=10.055592889129365%2C76.35393440723419"></iframe><br /><small><a
+  <tr>
+    <td class="bg_white email-section">
+      <div class="heading-section" style="text-align: center; padding: 0 30px;">
+
+        <h2 id="Venue">
+          <div style="color: #ff3c00"> VENUE</div>
+        </h2>
+        <p class="lead">The Conference is planned to be hosted at the<a href="https://www.facebook.com/keralatiz/">
+                    Kerala Technology Innovation Zone</a>, Kochi</ </div>
+          <section id="section-map" class="no-top no-bottom" aria-label="map-container">
+            <div class="row">
+              <div class="col-md-12 text-center">
+
+                <div class="spacer-single"></div>
+              </div>
+            </div>
+            <div id="map">
+              <iframe width="100%" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=76.3482964038849%2C10.052339152035792%2C76.35957241058351%2C10.05884659345764&amp;layer=mapnik&amp;marker=10.055592889129365%2C76.35393440723419"></iframe><br
+              /><small><a
           href="https://www.openstreetmap.org/?mlat=10.05559&amp;mlon=76.35393#map=17/10.05559/76.35393&amp;layers=N">View
           Larger Map</a></small>
-    </div>
-</section>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr><!-- end: tr -->
+            </div>
+          </section>
+    </td>
+  </tr>
+  </table>
+  </td>
+  </tr>
+  <!-- end: tr -->
 
+  <!-- 1 Column Text + Button : END -->
+  </table>
+  <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
+    <tr>
+      <td valign="middle" class="bg_black footer email-section">
+        <table>
+          <tr>
 
-         
-      <!-- 1 Column Text + Button : END -->
-      </table>
-      <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
-        <tr>
-          <td valign="middle" class="bg_black footer email-section">
-            <table>
-              <tr>
-                  
-                <td valign="top" width="33.333%" style="padding-top: 20px;">
-                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                    <tr>
-                      <td style="text-align: left; padding-right: 10px;">
-                        <h3 class="heading">Mec. Dev</h3>
-                        <img src="images/favicon.png" style="height: auto ; width : 85% ; max-width : 400px ;padding: 0vw;padding-right: 5vw ">
-                        <p>**some tagline**</p>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-                <td valign="top" width="33.333%" style="padding-top: 20px;">
-                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                    <tr>
-                      <td style="text-align: left; padding-left: 5px; padding-right: 5px;">
-                        <h3 class="heading">Contact Info</h3>
-                        <ul>
-                          <li><span class="text">Akhil Seshan </span></li>
-                          <li><span class="text">+91 7558047349</span></a></li>
-                          <br>
-                          <li><span class="text">Kurian Benoy</span></li>
-                          <li><span class="text">+91 9400125402</span></a></li>
-                        </ul>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-                <td valign="top" width="33.333%" style="padding-top: 20px;">
-                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                    <tr>
-                      <td style="text-align: left; padding-left: 10px;">
-                        <br> <br>    
-                        <ul>
-                          <li><a href="#about_mec">About Mec.Dev</a></li>
-                          <li><a href="#Workshops">Workshops</a></li>
-                          <li><a href="#speakers">Our speakers</a></li>
-                          <li><a href="#Venue">Venue</a></li>
-                        </ul>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr><!-- end: tr -->
-      </table>
+            <td valign="top" width="33.333%" style="padding-top: 20px;">
+              <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                <tr>
+                  <td style="text-align: left; padding-right: 10px;">
+                    <h3 class="heading">Mec. Dev</h3>
+                    <img src="images/favicon.png" style="height: auto ; width : 85% ; max-width : 400px ;padding: 0vw;padding-right: 5vw ">
+                    <p>**some tagline**</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td valign="top" width="33.333%" style="padding-top: 20px;">
+              <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                <tr>
+                  <td style="text-align: left; padding-left: 5px; padding-right: 5px;">
+                    <h3 class="heading">Contact Info</h3>
+                    <ul>
+                      <li><span class="text">Akhil Seshan </span></li>
+                      <li><span class="text">+91 7558047349</span></a>
+                      </li>
+                      <br>
+                      <li><span class="text">Kurian Benoy</span></li>
+                      <li><span class="text">+91 9400125402</span></a>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td valign="top" width="33.333%" style="padding-top: 20px;">
+              <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                <tr>
+                  <td style="text-align: left; padding-left: 10px;">
+                    <br> <br>
+                    <ul>
+                      <li><a href="#about_mec">About Mec.Dev</a></li>
+                      <li><a href="#Workshops">Workshops</a></li>
+                      <li><a href="#speakers">Our speakers</a></li>
+                      <li><a href="#Venue">Venue</a></li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <!-- end: tr -->
+  </table>
 
-    </div>
+  </div>
   </center>
- 
+
 </body>
 
 </html>
